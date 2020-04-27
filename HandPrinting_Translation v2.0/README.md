@@ -1,6 +1,6 @@
 # HandPrinting_Translation
 
-HandPrinting Translation v2.0 UPDATE
+## HandPrinting Translation v2.0 UPDATE
 
 *한글 텍스트 점자 데이터 추가
 *텍스트화 된 데이터 점자화 기능 추가
@@ -11,6 +11,7 @@ HandPrinting Translation v2.0 UPDATE
 **번역된 데이터 텍스트 분리 및 점자 출력
 
 *문제점 :
+
 현재 번역된 텍스트를 점자로 변경하면 백색 점자만 나오는 문제가 있음
 영어와 한글이 섞여서 번역되는 경우가 많음 문제점 해결을 위한 코드 필요 - 파파고 참고 예정
 최종 결과 텍스트를 기준으로 번역을 해야하는지 인식 도중 기준으로 번역을 해야하는지 고민해야함 - 해결 안됨
