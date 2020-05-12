@@ -87,9 +87,10 @@ public class DotFragment extends LinearLayout {
             view.findViewById(arr[i]).setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if(filled[index]) { // 만약 점자가 채워져있는 상태에서 터치시 1000ms간 진동
-                        vibrator.vibrate(1000);
-                    }
+                    if(filled[index]) { // 만약 점자가 채워져있는 상태에서 터치시 500ms간 진동
+                        vibrator.vibrate(500);
+                    } else
+                        vibrator.vibrate(100);
                 }
             });
         }
