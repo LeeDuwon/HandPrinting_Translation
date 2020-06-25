@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_pre_translate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="번역 전 텍스트"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_after_translate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="번역 후 텍스트"
+        app:layout_constraintEnd_toEndOf="@+id/tv_pre_translate"
+        app:layout_constraintStart_toStartOf="@+id/tv_pre_translate"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pre_translate" />
+
+    <Button
+        android:id="@+id/btn_change_to_braille"
+        android:layout_width="396dp"
+        android:layout_height="346dp"
+        android:layout_marginTop="244dp"
+        android:text="점자로 변경"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_after_translate" />
+</androidx.constraintlayout.widget.ConstraintLayout>
