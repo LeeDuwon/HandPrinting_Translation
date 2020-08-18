@@ -1,5 +1,5 @@
-# HandPrinting_Translation
-HandPrinting Translation
+# Smart Brallie
+Smart Brallie
 
 개발자 : 이두원 / 김민승
 
