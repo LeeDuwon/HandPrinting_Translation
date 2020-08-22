@@ -1,2 +1,0 @@
-# HandPrinting_Translation
-HandPrinting Translation
