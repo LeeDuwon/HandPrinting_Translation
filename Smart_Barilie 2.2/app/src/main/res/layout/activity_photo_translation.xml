@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:background="@color/info_background_color">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="16dp">
+
+                <RadioGroup
+                    android:id="@+id/rdgMode"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rd1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="한글 -> 영어"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/rd2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:textSize="18sp"
+                        android:text="영어 -> 한글"
+                        />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="12dp"
+                    android:padding="8dp"
+                    android:background="@drawable/layout_normal_border">
+
+                    <ImageView
+                        android:id="@+id/imgIcon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_camera_96_blue"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layWord"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp">
+
+                    <TextView
+                        android:id="@+id/txtWord"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:text="@string/default_text"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_arrow_down_bold_48_black"
+                        />
+
+                    <Button
+                        android:id="@+id/btnWord"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:padding="16dp"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/selected_text_color"
+                        android:text="@string/default_text"
+                        android:textAllCaps="false"
+                        android:stateListAnimator="@null"
+                        android:background="@drawable/button_border_selector"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/default_line_color"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <Button
+                android:id="@+id/btnTranslation"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:text="번역하기"
+                android:stateListAnimator="@null"
+                android:background="@drawable/button_normal_selector"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layLoading"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/popup_transparent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+</FrameLayout>

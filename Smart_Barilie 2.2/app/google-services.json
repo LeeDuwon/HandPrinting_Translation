@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1035776745107",
+    "firebase_url": "https://smart-braille-62b98.firebaseio.com",
+    "project_id": "smart-braille-62b98",
+    "storage_bucket": "smart-braille-62b98.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035776745107:android:67059959739fc97e7eb766",
+        "android_client_info": {
+          "package_name": "com.example.csr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035776745107-o344esjonikrt7be7u5jtth1rbm4vqm1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDm5a1uNevTCeXTv1SnjYNQhpr-0pKmtkQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1035776745107-o344esjonikrt7be7u5jtth1rbm4vqm1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

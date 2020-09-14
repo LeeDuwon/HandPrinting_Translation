@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnDot"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/selected_text_color"
+        android:text="@string/default_text"
+        android:textAllCaps="false"
+        android:stateListAnimator="@null"
+        android:background="@drawable/button_border_selector"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layDot"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:id="@+id/layDot1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/layDot3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/layDot2">
+
+            <ImageView
+                android:id="@+id/imgDot1"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/circle_empty"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                />
+
+            <TextView
+                android:id="@+id/txtDot1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:text="@string/default_text"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layDot2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/layDot4"
+            app:layout_constraintLeft_toRightOf="@id/layDot1"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <ImageView
+                android:id="@+id/imgDot2"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/circle_empty"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                />
+
+            <TextView
+                android:id="@+id/txtDot2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:text="@string/default_text"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layDot3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/layDot1"
+            app:layout_constraintBottom_toTopOf="@id/layDot5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/layDot4">
+
+            <ImageView
+                android:id="@+id/imgDot3"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/circle_empty"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                />
+
+            <TextView
+                android:id="@+id/txtDot3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:text="@string/default_text"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layDot4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/layDot2"
+            app:layout_constraintBottom_toTopOf="@id/layDot6"
+            app:layout_constraintLeft_toRightOf="@id/layDot3"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <ImageView
+                android:id="@+id/imgDot4"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/circle_empty"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                />
+
+            <TextView
+                android:id="@+id/txtDot4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:text="@string/default_text"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layDot5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/layDot3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/layDot6">
+
+            <ImageView
+                android:id="@+id/imgDot5"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/circle_empty"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                />
+
+            <TextView
+                android:id="@+id/txtDot5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:text="@string/default_text"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layDot6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/layDot4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/layDot5"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <ImageView
+                android:id="@+id/imgDot6"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/circle_empty"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                />
+
+            <TextView
+                android:id="@+id/txtDot6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:text="@string/default_text"
+                />
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
